@@ -1,35 +1,19 @@
-<p>Meu nome é{{tipo.n}}</p>
-<p>Minha idade é {{tipo.idade}}
-<p>Eu sou  {{tipo.nacionalidade}}
-
-{{#tipo.array}}
-<p>{{nome}}-  {{idade}}</p>
-{{/tipo.array}}
 
 
-{{#tipo.nomes}}
-   {{.}}
-{{/tipo.nomes}}
+{{#ArrayExtra}}
+{{.}}
+{{/ArrayExtra}}
+{{^ArrayExtra}}
+<p>Essa porra não existe</p>
+{{/ArrayExtra}}
 
-<ul>
-{{#tipo.array}}
-    <li>{{nome}}</li>
-    <li>{{idade}}</li>
-{{/tipo.array}}
-</ul>
-<h3>{{tipo.n}}</h3>
-<h3>{{tipo.idade}}</h3>
+<hr>
+{{#turn}}
+{{{tipo.texto}}}
+{{/turn}}
+{{^turn}}
+<p>Foda-se</p>
+{{/turn}}
+<hr>
 
-{{#tipo.outroArray}}
-<p>{{cor }}</p>
-{{/tipo.outroArray}}
-
-<h3>{{tipo.objt.cor}}</h3>
-
-
-
-    {{tipo.0.nomes}}
-
-
-
-
+  ('{{#array}}<li>{{nome}}</li>{{/array}}',tipo)
