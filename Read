@@ -1,1 +1,18 @@
-Para colocar os partials é muito simples, melhor do que descrever é vc acompanhar o código
+Helpers
+Vc tem um arquivo que distribui informação para todo mundo. 
+Vc faz um helpers.js e dentro dele vc exporta as variáveis que quer usar
+Dentro do app.js vc importa o helpers e com o use diz que res.locals.h = helpers
+Dai de qualquer lugar vc pode usar uma variável que está dentro helper. 
+Eu fiz um teste, apontando para o meu nome e recuperei isso no header 
+<p>Meu nome é {{h.teste}}</p>
+E no app eu fiz também uma variável universal e reuperei tanto no header quanto
+na hoje sem ter que passar nada pelo route
+
+Handler
+Dentro da pasta handler vc faz um arquivo erroHandler.js
+Dentro exporta um notFound
+no App inporta o errorHanlder e dentro manda um errorHandler.notFound
+Arruma essa pagina 404 dentro das views e só
+O engraçado é que dai toda vez que digitar uma página que não existe ele 
+vai mostrar essa Página não encontrada. É só isso
+Estranho

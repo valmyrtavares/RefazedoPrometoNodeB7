@@ -1,1 +1,3 @@
 <h1>Eu sou um Partial</h1>
+<p>Meu nome é {{h.teste}}</p>
+<p>Meu nome é {{justust}}</p>
