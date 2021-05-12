@@ -1,3 +1,11 @@
-<h1>Eu sou um Partial</h1>
-<p>Meu nome é {{h.teste}}</p>
-<p>Meu nome é {{justust}}</p>
+{{#flashes}}
+   {{#success}}
+        <div>{{.}}</div>
+    {{/success}}
+     {{#error}}
+        <div>{{.}}</div>
+    {{/error}}
+     {{#info}}
+        <div>{{.}}</div>
+    {{/info}}
+{{/flashes}}
