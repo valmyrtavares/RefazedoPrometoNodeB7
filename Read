@@ -1,2 +1,2 @@
-Colocar mensagens no header
-Comece importando as biblioecas e acho que o ideal é que acompanhe o código
+Para por os erros nas rotas ele acrescenta um try catch e eu tenho que colocar o header dentro do postAdd, porque
+os erros e sucessos estão sendo aproveitados dentro header
