@@ -1,12 +1,14 @@
-const express = require('express')
+const express = require('express');
+
+const postController = require('../controller/postController')
+
 const router = express.Router();
 
 
+router.get('/post/add', postController.add)
+router.post('/post/add',postController.addAction)
 
-const testandoFora = "testando Fora da rota"
-
-router.get('/', (req, res)=>{
-   
+router.get("/",(req, res)=>{
     res.render('home')
 })
 
