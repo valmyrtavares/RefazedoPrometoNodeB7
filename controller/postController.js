@@ -29,3 +29,21 @@ exports.edit = async (req, res)=>{
     const post = await Post.findOne({slug:req.params.slug})
     res.render('Post/postEdit',{post})
 }
+
+//Rotas para enviar data editado para o banco
+exports.editAction = async(req, res)=>{
+    req.body.slug = require('slug')(req.body.title,{lower:true})
+    
+    try{
+        const post = await Post.findOneAndUpdate(
+            {slug:req.params.slug},
+            req.body,
+            {new:true,
+            runValidators:true})
+    }catch(error){
+        req.flash('error', 'Error: '+ error.message)
+        res.redirect('/post/'+req.params.slug+'/edit')
+    }
+    req.flash('success', 'Post atualizado com sucesso')
+    res.redirect('/')
+}
