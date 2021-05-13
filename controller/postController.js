@@ -38,8 +38,8 @@ exports.editAction = async(req, res)=>{
         const post = await Post.findOneAndUpdate(
             {slug:req.params.slug},
             req.body,
-            {new:true,
-            runValidators:true})
+            {new:true, //Ele retorna os dados alterados
+            runValidators:true}) //Faz com que as validações sejam obsercadas
     }catch(error){
         req.flash('error', 'Error: '+ error.message)
         res.redirect('/post/'+req.params.slug+'/edit')

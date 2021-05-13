@@ -1,4 +1,3 @@
-Nesse commit eu fiz a página de editar, a rota para essa página, coloquei o link para a página de edição mas não
-existe rota para receber os itens editados. De qualquer forma cuidado com a pasta Post que está dentro da view, que
-é uma manobra minha e o esquecimento dessa sub pasta pode fazer a view não ser achada
-Acredito que é uma manobra tranquila
+Acrescentei os dados no helper para que eles fossem replicados no header
+Eu não tinha feito isso junto do curso, mas as alterções são tranquilas
+Acrescentei no postController coment[arios no editAction]
