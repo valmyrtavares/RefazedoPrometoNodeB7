@@ -1,2 +1,1 @@
-Para por os erros nas rotas ele acrescenta um try catch e eu tenho que colocar o header dentro do postAdd, porque
-os erros e sucessos estão sendo aproveitados dentro header
+Slug adicionado no Post, e rota dinamica implementada, só não existe ainda a página para receber o Post
