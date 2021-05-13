@@ -10,7 +10,8 @@ exports.add = (req, res)=>{
 
 //Rota de Pagina de mandar dados
 exports.addAction = async(req, res) =>{
-    const post = new Post(req.body)     
+    req.body.tags = req.body.tags.split(',').map(t=>t.trim())
+    const post = new Post(req.body)        
 
     try{
         await post.save();
@@ -33,6 +34,7 @@ exports.edit = async (req, res)=>{
 //Rotas para enviar data editado para o banco
 exports.editAction = async(req, res)=>{
     req.body.slug = require('slug')(req.body.title,{lower:true})
+    req.body.tags = req.body.tags.split(',').map(t=>t.trim())
     
     try{
         const post = await Post.findOneAndUpdate(

@@ -16,7 +16,8 @@ Corpo
 </label>
 <br/>
 <label>
-Tags:  
+Tags: <small>Separar as tags por virgulas</small> <br>
+<input type='text' name='tags'/>
 </label>
 <br/> 
 <label>

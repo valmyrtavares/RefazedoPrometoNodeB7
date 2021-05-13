@@ -5,6 +5,6 @@
 <p>{{post.title}}</p>
 
 <hr>
-{{#tags}}
+{{#post.tags}}
     <small>{{.}}</small>
-{{/tags}}
+{{/post.tags}}
