@@ -1,1 +1,4 @@
-Slug adicionado no Post, e rota dinamica implementada, só não existe ainda a página para receber o Post
+Nesse commit eu fiz a página de editar, a rota para essa página, coloquei o link para a página de edição mas não
+existe rota para receber os itens editados. De qualquer forma cuidado com a pasta Post que está dentro da view, que
+é uma manobra minha e o esquecimento dessa sub pasta pode fazer a view não ser achada
+Acredito que é uma manobra tranquila

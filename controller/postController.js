@@ -1,13 +1,15 @@
 const mongoose = require('mongoose')
- const Post = mongoose.model('Post')
+const Post = mongoose.model('Post')
 
 
-
+// Rota de Pagina de criar post
 exports.add = (req, res)=>{
     res.render('Post/postAdd')
 };
 
- exports.addAction = async(req, res) =>{
+
+//Rota de Pagina de mandar dados
+exports.addAction = async(req, res) =>{
     const post = new Post(req.body)     
 
     try{
@@ -20,4 +22,10 @@ exports.add = (req, res)=>{
     }
    req.flash('success','Post Salvo com sucesso')
     res.redirect('/')
- } 
+} 
+
+//Rota de Pagina de editar dados
+exports.edit = async (req, res)=>{
+    const post = await Post.findOne({slug:req.params.slug})
+    res.render('Post/postEdit',{post})
+}

@@ -22,6 +22,7 @@ postSchema.pre('save', function(next){
     if(this.isModified('title')){
         this.slug = slug(this.title)
     }
+    next();
 })
 
 module.exports = mongoose.model('Post', postSchema)
