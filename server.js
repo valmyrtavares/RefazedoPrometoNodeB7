@@ -7,7 +7,7 @@ require('dotenv').config({path:'variables.env'})
 mongoose.connect(process.env.DATABASE,{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
 mongoose.Promise = global.Promise;
 mongoose.connection.on("error", (error)=>{
-    console.error("ERRO: " + error.message)
+    console.error("ERRO: " + error.message + "df")
 })
 
 require('./models/Post')

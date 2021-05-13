@@ -1,3 +1,7 @@
-Essa é aula em que o terceiro módulo é terminado
-No final eu incluo o css no projeto, eu não lembrava que o css é puxado dentro do header
-E como ele está em todas as páginas eu acho que por isso todas as páginas pegam o css, eu não fiz o css 
+Essa foi a aula mai dificil que eu me lembro de ter feito nesse curso
+A parte pior é o middleware, que mesmo agora eu troquei write por white, o reto foi sussa
+Mas acho que agora temos os códigos muito cristalinos
+IMPORTANTE
+Foi integrado a funcionalidade de subir imagens e delas serem integradas dentro da pasta media
+E essas imagens estão sendo mostradas na home no edit e na view. Ou seja está pronto
+É só seguir o passo a passo desse commit e tudo rola fácil
