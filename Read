@@ -1,3 +1,3 @@
-Aqui foi implementado a entrada das tags, elas são mostradas na view de cada post individual, não é mostrada na home, 
-porque será implementado isso a posteriori e foi implementado também a edição dos posts, que podem ser conferidas também
-na view dos posts. Tudo pronto e funcionando 
+Essa é aula em que o terceiro módulo é terminado
+No final eu incluo o css no projeto, eu não lembrava que o css é puxado dentro do header
+E como ele está em todas as páginas eu acho que por isso todas as páginas pegam o css, eu não fiz o css 
