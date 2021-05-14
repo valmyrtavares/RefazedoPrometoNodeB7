@@ -3,8 +3,8 @@ const mongoose = require('mongoose')
 
 require('dotenv').config({path:'variables.env'})
 
-//Conexão com o banco de dados
-mongoose.connect(process.env.DATABASE,{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
+//Conexão com o banco de dados O useCreateIndex: true foi adicionado 
+mongoose.connect(process.env.DATABASE,{useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
 mongoose.Promise = global.Promise;
 mongoose.connection.on("error", (error)=>{
     console.error("ERRO: " + error.message + "df")

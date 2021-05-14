@@ -1,5 +1,6 @@
-Aqui é implementado os filtros que trazem os posts a partir das tags, Ele começa sendo feito no models/post e depois
-é feito no homeController. Tem passo importantes sendo feitos, eu comentei cada linha para facilitar 
-a compreensão a posteriori. Porque o problema é sempre a posteriori, Caso não acompanhe, assista a aula de 4/8 que se 
-chama filtrando tags, que é bem didática
-O código está funcionando perfeito até aqui
+Vamos criar um usuario
+Começando pela tela de registro criar uma view register.mst
+Depois instala isso  npm install passport passport-local passport-local-mongoose --save
+Depois vai fazer um model User lembrando que a senha vai receber um tratamento especial
+Quando usar o primeiro post da tela register vc faz o famoso res.json(req.body) para testar se deu 
+tudo certo. Eu termino esse video gerando um novo usuário no banco, sem altenticação, mas com o usuário gerado
