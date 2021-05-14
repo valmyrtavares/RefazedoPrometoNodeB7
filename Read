@@ -1,3 +1,5 @@
-1 ponto importante é como o nome da tag é colocado dentro do url por uma query. Esse é um ponto para se prestar
-atenção
-Nesse commit nós pegamos as tags do banco de dados com aggregate e no próximo vamos filtrar os posts pelas tags
+Aqui é implementado os filtros que trazem os posts a partir das tags, Ele começa sendo feito no models/post e depois
+é feito no homeController. Tem passo importantes sendo feitos, eu comentei cada linha para facilitar 
+a compreensão a posteriori. Porque o problema é sempre a posteriori, Caso não acompanhe, assista a aula de 4/8 que se 
+chama filtrando tags, que é bem didática
+O código está funcionando perfeito até aqui

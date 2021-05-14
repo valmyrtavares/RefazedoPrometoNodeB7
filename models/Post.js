@@ -23,6 +23,7 @@ postSchema.pre('save', async function(next){
     if(this.isModified('title')){
         this.slug = slug(this.title)
 
+        //Regex para evitar slug duplicados
         const slugRegex = new RegExp(`^(${this.slug})((-[0-9]{1,}$)?)$`, 'i')
         const postWithSlug = await this.constructor.find({slug:slugRegex})
 
@@ -33,7 +34,7 @@ postSchema.pre('save', async function(next){
     }
     next();
 })
-
+    //Agregate para trazer as tags direto do banco de dados
     postSchema.statics.getTagsList = function(){
         return this.aggregate([
             { $unwind:'$tags' },
