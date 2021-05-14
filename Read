@@ -1,4 +1,3 @@
-Essa é a aula 4 sobre um slug único e faz com que caso vc repita o title do post o slug vai ser diferente
-A parte interesante é o regex que apesar de já ter aprendido gostaria de sober melhor, mas pela falta de uso
-sempre tenho que consultar quase como se nunca tivesse aprendido
-Aumentei o tamanho da imagem no view
+1 ponto importante é como o nome da tag é colocado dentro do url por uma query. Esse é um ponto para se prestar
+atenção
+Nesse commit nós pegamos as tags do banco de dados com aggregate e no próximo vamos filtrar os posts pelas tags
