@@ -1,7 +1,4 @@
-Essa foi a aula mai dificil que eu me lembro de ter feito nesse curso
-A parte pior é o middleware, que mesmo agora eu troquei write por white, o reto foi sussa
-Mas acho que agora temos os códigos muito cristalinos
-IMPORTANTE
-Foi integrado a funcionalidade de subir imagens e delas serem integradas dentro da pasta media
-E essas imagens estão sendo mostradas na home no edit e na view. Ou seja está pronto
-É só seguir o passo a passo desse commit e tudo rola fácil
+Essa é a aula 4 sobre um slug único e faz com que caso vc repita o title do post o slug vai ser diferente
+A parte interesante é o regex que apesar de já ter aprendido gostaria de sober melhor, mas pela falta de uso
+sempre tenho que consultar quase como se nunca tivesse aprendido
+Aumentei o tamanho da imagem no view

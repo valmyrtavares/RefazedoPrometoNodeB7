@@ -3,7 +3,7 @@
 <h1>Post</h1>
 <h3>{{post.title}}</h3>
 <p>{{post.body}}</p>
- <img src="/media/{{post.photo}}"/>
+ <img src="/media/{{post.photo}}" width="200"/>
 
 <hr>
 {{#post.tags}}
