@@ -1,6 +1,1 @@
-Vamos criar um usuario
-Começando pela tela de registro criar uma view register.mst
-Depois instala isso  npm install passport passport-local passport-local-mongoose --save
-Depois vai fazer um model User lembrando que a senha vai receber um tratamento especial
-Quando usar o primeiro post da tela register vc faz o famoso res.json(req.body) para testar se deu 
-tudo certo. Eu termino esse video gerando um novo usuário no banco, sem altenticação, mas com o usuário gerado
+O login e o logout estão funcionando, mas o add usuario parou de funcionar

@@ -4,6 +4,9 @@
     </head>
     <body>
         <header>
+            {{#user}}
+                Ola {{user.name}}<a href="/users/logout">Sair</a>
+            {{/user}}
             <ul>
                 {{#h.menu}}
                 <li><a href="{{slug}}">{{name}}</a></li>
