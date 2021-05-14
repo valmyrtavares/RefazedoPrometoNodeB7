@@ -7,7 +7,8 @@ exports.index = async(req, res)=>{
     let responseJson = {
         posts:[],
         tags:[],
-        tag:''
+        tag:'',
+        n:req.user
     }
  
     responseJson.tag = req.query.t;

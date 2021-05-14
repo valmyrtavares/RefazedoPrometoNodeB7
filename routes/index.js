@@ -9,6 +9,8 @@ const imageMiddleware = require('../middlewares/imagemMiddlewares')
 
 //ROTAS PARA HOME
 router.get('/', homeController.index)
+//Importação ESTRANHA
+//const{route} = require('../app')
 
 
 //ROTAS PARA POST
@@ -29,8 +31,14 @@ router.get('/post/:slug/edit', postController.edit)
 
 //ROTAS PARA USER
 router.get('/users/login', userController.login)
+router.post('/users/login', userController.loginAction)
+
 router.get('/users/register', userController.register)
 router.post('/users/register', userController.registerAction)
+
+router.get('/users/logout', userController.logout)
+
+
 
 
 

@@ -10,4 +10,5 @@
     <label>Senha
         <input type="password" name="password"/>
     </label>
+    <input type="submit" value="Logar"/>
 </form>
