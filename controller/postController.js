@@ -50,6 +50,7 @@ exports.editAction = async(req, res)=>{
     res.redirect('/')
 }
 
+//Rota de post individual VIEW
 exports.view = async(req, res)=>{
     const post = await Post.findOne({slug:req.params.slug})
 

@@ -2,7 +2,7 @@
   "name": "refazedoprometonodeb7",
   "version": "1.0.0",
   "scripts": {
-    "start": "nodemon ./server.js"
+    "start": "nodemon --inspect ./server.js"
   },
   "dependencies": {
     "cookie-parser": "^1.4.5",
