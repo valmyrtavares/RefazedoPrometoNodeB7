@@ -1,5 +1,2 @@
-Consegui fazer o adicionar usuario voltar a funcionar
-Motivo
-Ele não conseguia adicionar mais do que um usuario, no segundo ele já dava erro
-Solução
-Recriar a tabela e só
+Agora o Login e o add Usuário estão ambos funcionando nesta versão. Com Logout e saudação ao usuario
+Tudo certo
