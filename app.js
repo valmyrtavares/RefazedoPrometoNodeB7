@@ -32,12 +32,6 @@ app.use(session({
 
 app.use(flash())
 
-app.use((req, res, next)=>{
-    res.locals.h = helpers;
-    res.locals.user = req.user;
-    res.locals.flashes = req.flash();
-    next();
-})
 
 app.use(passport.initialize());
 app.use(passport.session())

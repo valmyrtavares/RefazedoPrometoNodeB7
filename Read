@@ -1,2 +1,3 @@
-Agora o Login e o add Usuário estão ambos funcionando nesta versão. Com Logout e saudação ao usuario
-Tudo certo
+Foi colocado um middleware que impede que um usuário não logado entre nas rotas de adicionar post e editar post
+Tudo funcionando
+Não tem a funcionalidade de impedir que os botões de editar e adicionar post aparecão isso virá no  próximo commit

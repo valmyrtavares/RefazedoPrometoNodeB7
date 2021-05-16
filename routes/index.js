@@ -6,6 +6,7 @@ const userController = require('../controller/userController')
 
 const router = express.Router();
 const imageMiddleware = require('../middlewares/imagemMiddlewares')
+const authMiddleware = require('../middlewares/authMiddlewares')
 
 //ROTAS PARA HOME
 router.get('/', homeController.index)
@@ -14,15 +15,18 @@ router.get('/', homeController.index)
 
 
 //ROTAS PARA POST
-router.get('/post/add', 
+router.get('/post/add',authMiddleware.isLogged,
 postController.add)
+
 router.post('/post/add',
+    authMiddleware.isLogged,
     imageMiddleware.upload,
     imageMiddleware.resize,
     postController.addAction)
 
-router.get('/post/:slug/edit', postController.edit)
+router.get('/post/:slug/edit', authMiddleware.isLogged, postController.edit)
  router.post('/post/:slug/edit',
+    authMiddleware.isLogged,
     imageMiddleware.upload,
     imageMiddleware.resize,
     postController.editAction)

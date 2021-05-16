@@ -12,7 +12,7 @@ exports.loginAction = (req, res)=>{
     auth(req.body.email, req.body.password, (error, result)=>{
         if(!result){
             req.flash('error','Seu email ou senha estão errados')
-            res.redirect('/user/login')
+            res.redirect('/users/login')
             return
         }
         req.login(result,()=>{})
