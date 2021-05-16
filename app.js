@@ -48,7 +48,6 @@ passport.serializeUser(User.serializeUser())
 passport.deserializeUser(User.deserializeUser())
  
 
-
 app.use('/', router)
 
 app.use(errorHandler.notFound)
