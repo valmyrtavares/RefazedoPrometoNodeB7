@@ -1,1 +1,5 @@
-O login e o logout estão funcionando, mas o add usuario parou de funcionar
+Consegui fazer o adicionar usuario voltar a funcionar
+Motivo
+Ele não conseguia adicionar mais do que um usuario, no segundo ele já dava erro
+Solução
+Recriar a tabela e só

@@ -33,6 +33,7 @@ exports.register = (req, res)=>{
 exports.registerAction = (req, res)=>{
    
     const newUser = new User(req.body)   
+    
     User.register(newUser, req.body.password,(error)=>{
         if(error){
             req.flash('error','Ocorreu um erro, tente mais tarde')
