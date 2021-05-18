@@ -1,6 +1,5 @@
-É tudo bem tranquilo e natural como uma edição de usuário só que ele esquece de por async e await e eu por me antecipar tomo o erro 
-e fico perdendo tempo, Menos mal. 
-Ele faz uma pagina de edição de usuário que pode mudar o email e o nome, não a senha
-Acho que só pelo código da pra seguir. Está tudo funcionando 
+Foi feito um middleware que é colocado dentro da rota para mudar a senha, os erros foram de sintax e de rotas erradas, nada demais
+Agora eu consigo logar e logado trocar a senha antiga com uma consfimação de senha tudo integrado com os flashs e tudo mais
+Funcionando
 
 
