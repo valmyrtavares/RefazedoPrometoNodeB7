@@ -42,6 +42,9 @@ router.post('/users/register', userController.registerAction)
 
 router.get('/users/logout', userController.logout)
 
+router.get('/profile', authMiddleware.isLogged, userController.profile);
+router.post('/profile', authMiddleware.isLogged, userController.profileAction);
+
 
 
 

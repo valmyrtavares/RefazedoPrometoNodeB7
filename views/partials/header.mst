@@ -5,7 +5,7 @@
     <body>
         <header>
             {{#user}}
-                Ola {{user.name}}
+                Ola <a href="/profile ">{{user.name}}</a>
             {{/user}}
             <ul>
                 {{#h.menu}}

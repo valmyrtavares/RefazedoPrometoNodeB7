@@ -1,6 +1,6 @@
-Esse é um bom momento do curso, que agrega um usuario ao post feito, para que se saiba quem foi que escreveu aquele post
-O ponto difícil dessa manobra é o aggregation que na aula vem como pipeLine e na verdade tem que ser pipeline e isso me tomou
-infelizmente um tempo, o restante é suave, sempre lembrando que teremos uma mudança desse código na última aula desse curso
-mas por enquanto ficará assim 
+É tudo bem tranquilo e natural como uma edição de usuário só que ele esquece de por async e await e eu por me antecipar tomo o erro 
+e fico perdendo tempo, Menos mal. 
+Ele faz uma pagina de edição de usuário que pode mudar o email e o nome, não a senha
+Acho que só pelo código da pra seguir. Está tudo funcionando 
 
 
