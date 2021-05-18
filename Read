@@ -1,19 +1,6 @@
-Agora para impedir que botões apareçam se faz outro caminho, em primeiro lugar se altera no helpers com mais 
-dois atributos e no app se faz isso aqui com o helpers
-app.use((req, res, next)=>{
-    res.locals.h = helpers;
-    res.locals.flashes = req.flash();
-    res.locals.user = req.user;
+Esse é um bom momento do curso, que agrega um usuario ao post feito, para que se saiba quem foi que escreveu aquele post
+O ponto difícil dessa manobra é o aggregation que na aula vem como pipeLine e na verdade tem que ser pipeline e isso me tomou
+infelizmente um tempo, o restante é suave, sempre lembrando que teremos uma mudança desse código na última aula desse curso
+mas por enquanto ficará assim 
 
-    if(req.isAuthenticated()){
-        res.locals.h.menu = res.locals.h.menu.filter(i=>(i.guest||i.logged));
-    }else{
-        res.locals.h.menu = res.locals.h.menu.filter(i=>i.guest);
-    }
-    next();
-}) 
-Essa é a primeira versão, que faz com que os botões não apareçam de novo o que é um problema então para que isso
-seja resolvido o código vai para essa outra versão
-Ele diz que uma forma de clonar o objeto sem mandá-lo por referneicia é fazendo {...helpers} isso pra mim não faz sentido
-mas funciona. Ele diz que está passando os valores de helpers para o h e não o helpers, ele sempre vai poder pegar o 
-original dos helpers sem que ele seja danificado pelo filter
+

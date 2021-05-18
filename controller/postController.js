@@ -1,3 +1,4 @@
+//const { read } = require('jimp');
 const mongoose = require('mongoose')
 const Post = mongoose.model('Post')
 
@@ -11,6 +12,7 @@ exports.add = (req, res)=>{
 //Rota de Pagina de mandar dados
 exports.addAction = async(req, res) =>{
     req.body.tags = req.body.tags.split(',').map(t=>t.trim())
+    req.body.author = req.user._id
     const post = new Post(req.body)        
 
     try{

@@ -18,10 +18,12 @@ exports.index = async(req, res)=>{
     const tagsPromise =  Post.getTagsList();
 
     //Trazendo a tag selecionada que é gerda no ternário acima
-    const postsPromise =  Post.find(postFilter);
+    const postsPromise =  Post.findPosts(postFilter);
 
     //Desestruturando a promise para passar para os responseJson
     const [tags, posts ] = await Promise.all([tagsPromise, postsPromise])
+
+    //console.log(posts[0])
 
     
     //Colocando cor nas tags da home
