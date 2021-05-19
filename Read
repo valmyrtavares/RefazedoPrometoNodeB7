@@ -1,9 +1,9 @@
-Esse é o último grande desafio desse curso
-Implantamos um esqueceu a sua senha na página de login, casao clique no link vc será redirecionado para uma tela que vc deve
-informar seu email. Se fizer isso recebe uma mensagem dizendo que pode acessar o link e será redirecionado para a troca de senha
-Copiando e colando esse link que traz um código vc vai paa a tela de refazer senha, caso reescreva duas senhas iguais a senha é trocada
-caso erre as duas recebe uma mensagem dizendo que as senhas não batem, e se baterem a senha é trocada, para testar vc pode locar com a 
-senha nova e verá que funciona. 
-Tudo funcionando. Aqui só resta a feature de mandar esse link para o seu email, que será a próxima aula
+Curso finazalido, foi adicionado um novo handler, usamos o mailtrap para testar
+Ele funciona recebendo os emmails como se fosse um usuário, o endereço do MailTrap é 
+https://mailtrap.io/inboxes/1055222/messages/2205061209
+Os códigos são meio longos mas não deram muitos erros, só alguns que felizmente eu consegui
+achar rápido
+Foi anexado mais uma biblioteca no projeto
 
-
+Esse Read é referente a aula anterior e o dessa aua é esse
+Somente um refaturamento do código no Post
