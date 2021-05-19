@@ -40,6 +40,12 @@ router.post('/users/login', userController.loginAction)
 router.get('/users/register', userController.register)
 router.post('/users/register', userController.registerAction)
 
+router.get('/users/forget', userController.forget)
+router.post('/users/forget', userController.forgetAction)
+
+router.get('/users/reset/:token', userController.forgetToken)
+router.post('/users/reset/:token', userController.forgetTokenAction)
+
 router.get('/users/logout', userController.logout)
 
 router.get('/profile', authMiddleware.isLogged, userController.profile);
